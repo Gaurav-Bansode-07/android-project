@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:padding="8dp">
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:padding="8dp"
+                android:background="#D3D3D3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOB"
+                android:padding="8dp"
+                android:background="#D3D3D3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:padding="8dp"
+                android:background="#D3D3D3"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Data Row -->
+        <TableRow
+            android:id="@+id/dataRow">
+            <!-- Data will be dynamically added in Java -->
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
